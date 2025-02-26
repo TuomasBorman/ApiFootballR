@@ -7,6 +7,12 @@ The basic usage goes something like this:
 addApiFootball(sport = "football", datatype = "leagues", api.key = "7183699be7198ae838421831d788e077")
 ```
 
+To install, do this:
+
+```
+remotes::install_github("https://github.com/TuomasBorman/ApiFootballR")
+```
+
 The data can stored conveniently to SQLite database.
 See further information and examples from vignettes and function documentation.
 
