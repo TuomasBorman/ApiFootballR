@@ -1,0 +1,3 @@
+Version: 0.5.0
+Date: 11/2/2025
+- Add getApiFootball, addApiFootball, and updateApiFootball functions function

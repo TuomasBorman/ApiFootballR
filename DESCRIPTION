@@ -1,0 +1,24 @@
+Package: ApiFootballR
+Type: Package
+Version: 0.1.0
+Authors@R:
+    c(person(given = "Tuomas", family = "Borman", role = c("aut", "cre"),
+             email = "tuomas.v.borman@utu.fi",
+             comment = c(ORCID = "0000-0002-8563-8884")))
+Title: Fetch data from Api-Football
+Description:
+    R interface to Api-Football
+License:
+Encoding: UTF-8
+Depends:
+    R(>= 4.3),
+    httr2,
+    RSQLite,
+    data.table,
+    pbapply
+Imports:
+Suggests:
+URL:
+BugReports:
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2

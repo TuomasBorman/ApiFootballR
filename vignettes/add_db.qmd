@@ -1,0 +1,34 @@
+---
+title: "Add to db"
+format: html
+---
+
+## American football
+
+```{r}
+sport <- "american-football"
+```
+
+### Teams
+
+```{r}
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "teams", season = 2022, league = 1, api.key = "7183699be7198ae838421831d788e077")
+```
+
+### Games
+
+```{r}
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "games", season = 2023, league = 1, api.key = "7183699be7198ae838421831d788e077")
+```
+
+### Leagues
+
+```{r}
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "leagues", api.key = "7183699be7198ae838421831d788e077")
+```
+
+### Standings
+
+```{r}
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "standings", season = "2023", league = 1, api.key = "7183699be7198ae838421831d788e077")
+```

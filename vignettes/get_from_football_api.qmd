@@ -1,0 +1,540 @@
+---
+title: "test_ApiFootball_fetch"
+format: html
+---
+
+## American football
+
+```{r}
+sport <- "american-football"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", season = 2023, league = 1)
+head(res)
+```
+
+### Injuries
+
+```{r}
+res <- getApiFootball(sport, "injuries", team = 1)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", game = "7775")
+head(res)
+```
+
+### Players
+
+```{r}
+res <- getApiFootball(sport, "players", team = 1, season = 2023)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", season = "2023", league = 1)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", league = 2, season = 2023)
+head(res)
+```
+
+## Baseball
+
+```{r}
+sport <- "baseball"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", season = 2022, league = 3)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", season = 2023, league = 22)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", season = 2022, league = 3)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", season = 2022, league = 3)
+head(res)
+```
+
+## Basketball
+
+```{r}
+sport <- "basketball"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", season = 2021, league = 201)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", season = 2023, league = 400)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", season = 2022, league = 48)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", season = 2022, league = 3)
+head(res)
+```
+
+## Football
+
+```{r}
+sport <- "football"
+```
+
+### Coachs
+
+```{r}
+res <- getApiFootball(sport, "coachs", team = 23)
+head(res)
+```
+
+### Fixtures
+
+```{r}
+res <- getApiFootball(sport, "fixtures", season = 2023, league = 320)
+head(res)
+```
+
+### Injuries
+
+```{r}
+res <- getApiFootball(sport, "injuries", league = 144, season = 2021)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", league = 61, season = 2023)
+head(res)
+```
+
+### Players
+
+```{r}
+res <- getApiFootball(sport, "players", league = 204, season = 2023)
+head(res)
+```
+
+### Players / Squads
+
+```{r}
+res <- getApiFootball(sport, "players/squads", team = 22)
+head(res)
+```
+
+### Predictions
+
+```{r}
+res <- getApiFootball(sport, "predictions", fixture = 3459)
+head(res)
+```
+
+### Sidelined
+
+```{r}
+res <- getApiFootball(sport, "sidelined", player = 8747)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", season = 2022, league = 3)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", league = 380, season = 2022)
+head(res)
+```
+
+### Transfers
+
+```{r}
+res <- getApiFootball(sport, "transfers", team = 234)
+head(res)
+```
+
+### Trophies
+
+```{r}
+res <- getApiFootball(sport, "trophies", coach = 57)
+head(res)
+```
+
+## Formula 1
+
+```{r}
+sport <- "formula-1"
+```
+
+### Circuits
+
+```{r}
+res <- getApiFootball(sport, "circuits")
+head(res)
+```
+
+### Competitions
+
+```{r}
+res <- getApiFootball(sport, "competitions")
+head(res)
+```
+
+### Drivers
+
+```{r}
+res <- getApiFootball(sport, "drivers", id = 1)
+head(res)
+```
+
+### Pitstops
+
+```{r}
+res <- getApiFootball(sport, "pitstops", race = 1)
+head(res)
+```
+
+### Races
+
+```{r}
+res <- getApiFootball(sport, "races", season = 2022)
+head(res)
+```
+
+### Rankings / Drivers
+
+```{r}
+res <- getApiFootball(sport, "rankings/drivers", season = 2022)
+head(res)
+```
+
+### Rankings / Fastest laps
+
+```{r}
+res <- getApiFootball(sport, "rankings/fastestlaps", race = 1)
+head(res)
+```
+
+### Rankings / Races
+
+```{r}
+res <- getApiFootball(sport, "rankings/races", race = 1)
+head(res)
+```
+
+### Rankings / Starting grid
+
+```{r}
+res <- getApiFootball(sport, "rankings/startinggrid", race = 1)
+head(res)
+```
+
+### Rankings / Teams
+
+```{r}
+res <- getApiFootball(sport, "rankings/teams", season = 2022)
+head(res)
+```
+
+### Seasons
+
+```{r}
+res <- getApiFootball(sport, "seasons")
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams")
+head(res)
+```
+
+## Handball
+
+```{r}
+sport <- "handball"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", league = 5, season = 2022)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", league = 54, season = 2023)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", league = 36, season = 2021)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", league = 54, season = 2023)
+head(res)
+```
+
+## Hockey
+
+```{r}
+sport <- "hockey"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", league = 53, season = 2022)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", league = 5, season = 2023)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", league = 36, season = 2021)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", league = 32, season = 2023)
+head(res)
+```
+
+## NBA
+
+```{r}
+sport <- "nba"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", league = "vegas", season = 2022)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Players
+
+```{r}
+res <- getApiFootball(sport, "players", team = 2, season = 2023)
+head(res)
+```
+
+### Seasons
+
+```{r}
+res <- getApiFootball(sport, "seasons")
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", league = "standard", season = 2022)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", league = "standard")
+head(res)
+```
+
+## Rugby
+
+```{r}
+sport <- "rugby"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", league = 10, season = 2022)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", league = 10, season = 2023)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", league = 10, season = 2023)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", league = "10", season = 2022)
+head(res)
+```
+
+## Volleyball
+
+```{r}
+sport <- "volleyball"
+```
+
+### Games
+
+```{r}
+res <- getApiFootball(sport, "games", league = 53, season = 2022)
+head(res)
+```
+
+### Leagues
+
+```{r}
+res <- getApiFootball(sport, "leagues")
+head(res)
+```
+
+### Odds
+
+```{r}
+res <- getApiFootball(sport, "odds", league = 5, season = 2023)
+head(res)
+```
+
+### Standings
+
+```{r}
+res <- getApiFootball(sport, "standings", league = 36, season = 2021)
+head(res)
+```
+
+### Teams
+
+```{r}
+res <- getApiFootball(sport, "teams", league = 54, season = 2023)
+head(res)
+```
