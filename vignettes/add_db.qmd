@@ -12,23 +12,23 @@ sport <- "american-football"
 ### Teams
 
 ```{r}
-res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "teams", season = 2022, league = 1, api.key = "7183699be7198ae838421831d788e077")
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "teams", season = 2022, league = 1, api.key = "your_api_key")
 ```
 
 ### Games
 
 ```{r}
-res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "games", season = 2023, league = 1, api.key = "7183699be7198ae838421831d788e077")
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "games", season = 2023, league = 1, api.key = "your_api_key")
 ```
 
 ### Leagues
 
 ```{r}
-res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "leagues", api.key = "7183699be7198ae838421831d788e077")
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "leagues", api.key = "your_api_key")
 ```
 
 ### Standings
 
 ```{r}
-res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "standings", season = "2023", league = 1, api.key = "7183699be7198ae838421831d788e077")
+res <- addApiFootball(dir.name = "../data", sport = sport,  datatype = "standings", season = "2023", league = 1, api.key = "your_api_key")
 ```
