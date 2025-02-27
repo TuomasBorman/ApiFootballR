@@ -4,7 +4,7 @@ This package faciliates retrieal of data from [API-Football](https://www.api-foo
 The basic usage goes something like this:
 
 ```
-addApiFootball(sport = "football", datatype = "leagues", api.key = "7183699be7198ae838421831d788e077")
+addApiFootball(sport = "football", datatype = "leagues", api.key = "your_api_key")
 ```
 
 To install, do this:
