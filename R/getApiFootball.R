@@ -29,13 +29,13 @@
 #' @examples
 #'
 #' # Get games
-#' res <- getApiFootball("basketball", "games", league = 1, season = 2023, api.key = "7183699be7198ae838421831d788e077")
+#' res <- getApiFootball("basketball", "games", league = 1, season = 2023, api.key = "your_api_key")
 #'
 #' # Fetch leagues and add them to database
-#' addApiFootball("basketball", "leagues", api.key = "7183699be7198ae838421831d788e077")
+#' addApiFootball("basketball", "leagues", api.key = "your_api_key")
 #'
 #' # Update the database
-#' updateApiFootball(api.key = "7183699be7198ae838421831d788e077")
+#' updateApiFootball(api.key = "your_api_key")
 #'
 #' @name API-Football
 NULL
